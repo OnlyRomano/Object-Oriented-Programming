@@ -12,9 +12,7 @@ public class Program2 {
 
             em.GrossPay();
             em.Tax();
-            em.SSS();
-            em.Philhealth();
-            em.Pagibig();
+           
             em.Totaldeduction();
             em.Netpay();
 
