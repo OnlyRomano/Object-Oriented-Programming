@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Program7 {
+public class Program8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -16,34 +16,34 @@ public class Program7 {
                 choice = sc.nextInt();
             } while (choice < 1 || choice > 3);
 
-            Average average = new Average();
-
             if (choice == 1) {
+                Mdas3 mdas = new Mdas3();
                 System.out.print("Input Number: ");
-                average.setdata1(sc.nextInt());
+                mdas.setdata1(sc.nextInt());
                 System.out.print("Input Number: ");
-                average.setdata2(sc.nextInt());
+                mdas.setdata2(sc.nextInt());
 
-                average.Add();
-                average.Subtract();
-                average.Divide();
-                average.Multiply();
+                mdas.Add();
+                mdas.Subtract();
+                mdas.Divide();
+                mdas.Multiply();
 
-                System.out.println("Sum: " + average.getSum());
-                System.out.println("Difference: " + average.getDifferent());
-                System.out.println("Product: " + average.getProduct());
-                System.out.println("Quotient: " + average.getQuotient());
+                System.out.println("Sum: " + mdas.getSum());
+                System.out.println("Difference: " + mdas.getDifferent());
+                System.out.println("Product: " + mdas.getProduct());
+                System.out.println("Quotient: " + mdas.getQuotient());
             }
 
             else {
+                Average avg = new Average();
                 System.out.print("Input Number: ");
-                average.setdata1(sc.nextInt());
+                avg.setdata1(sc.nextInt());
                 System.out.print("Input Number: ");
-                average.setdata2(sc.nextInt());
+                avg.setdata2(sc.nextInt());
                 System.out.print("Input Number: ");
-                average.setdata3(sc.nextInt());
-                average.setAverage();
-                System.out.println("Average: " + average.getAverage());
+                avg.setdata3(sc.nextInt());
+                avg.setAverage();
+                System.out.println("Avarage: " + avg.getAverage());
             }
         }
 
